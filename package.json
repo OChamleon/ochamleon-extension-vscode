@@ -1,0 +1,47 @@
+{
+    "name": "giulio-caflisch.special-character-replacer",
+    "displayName": "Special Character Replacer",
+    "description": "Replace @ prefixed text with special characters while typing",
+    "version": "0.0.1",
+    "publisher": "Giulio Caflisch",
+    "engines": {
+        "vscode": "^1.60.0"
+    },
+    "activationEvents": [
+        "onLanguage:Chameleon"
+    ],
+    "main": "./src/extension.js",
+    "contributes": {
+        "languages": [
+            {
+                "id": "Chameleon",
+                "extensions": [
+                    ".chmln"
+                ],
+                "aliases": [
+                    "chameleon",
+                    "chmln",
+                    "CHMLN"
+                ]
+            }
+        ],
+        "grammars": [
+            {
+                "language": "Chameleon",
+                "scopeName": "source.Chameleon",
+                "path": "./syntaxes/chameleon.tmGrammar.json"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -p ./ --watch"
+    },
+    "devDependencies": {
+        "@types/vscode": "^1.60.0",
+        "js-yaml": "^4.1.0",
+        "typescript": "^4.4.3",
+        "vscode-test": "^1.5.2"
+    }
+}
