@@ -1,25 +1,25 @@
 {
     "name": "giulio-caflisch.special-character-replacer",
-    "displayName": "Special Character Replacer",
-    "description": "Replace @ prefixed text with special characters while typing",
-    "version": "0.0.1",
-    "publisher": "Giulio Caflisch",
+    "displayName": "OChamleon Extension for VSCODE",
+    "description": "Syntax highlight, Special characters with @'LaTeX name' and Interactive infoviewer",
+    "version": "0.0.0",
+    "publisher": "OChamleon",
     "engines": {
         "vscode": "^1.60.0"
     },
     "activationEvents": [
-        "onLanguage:Chameleon"
+        "onLanguage:OChamleon"
     ],
     "main": "./src/extension.js",
     "contributes": {
         "languages": [
             {
-                "id": "Chameleon",
+                "id": "OChamleon",
                 "extensions": [
                     ".chmln"
                 ],
                 "aliases": [
-                    "chameleon",
+                    "ochamleon",
                     "chmln",
                     "CHMLN"
                 ]
@@ -27,9 +27,9 @@
         ],
         "grammars": [
             {
-                "language": "Chameleon",
-                "scopeName": "source.Chameleon",
-                "path": "./syntaxes/chameleon.tmGrammar.json"
+                "language": "OChamleon",
+                "scopeName": "source.OChamleon",
+                "path": "./syntaxes/OChamleon.tmGrammar.json"
             }
         ]
     },

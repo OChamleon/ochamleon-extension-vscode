@@ -1,4 +1,4 @@
-# Welcome to the Cameleon Extension
+# Welcome to the OChamleon Extension
 
 ## What's in the folder
 
